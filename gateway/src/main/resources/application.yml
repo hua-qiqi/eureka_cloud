@@ -1,0 +1,22 @@
+cloud:
+  gateway:
+    discovery:
+      locator:
+        enabled: false
+        lowerCaseServiceId: true
+    routes:
+      - id: feign-provider
+        uri: lb://feign-provider
+        predicates:
+          - Path=/demo/**
+        filters:
+          - RequestTime
+          - name: RequestRateLimiter
+            args:
+              key-resolver: '#{@hostAddrKeyResolver}'
+              redis-rate-limiter.replenishRate: 1
+              redis-rate-limiter.burstCapacity: 3
+spring:
+  redis:
+    url: 192.168.100.39:8000,192.168.100.39:8001,192.168.100.39:8002,192.168.100.39:8003,192.168.100.39:8004,192.168.100.39:8005
+    password: testpass

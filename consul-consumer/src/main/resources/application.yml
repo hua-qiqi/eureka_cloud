@@ -1,0 +1,15 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: consul-consumer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: consul-consumer
+        healthCheckInterval: 15s
+        register-health-check: true
+        health-check-url: http://${spring.cloud.client.ip-address}:${server.port}/actuator/health
+        register: true

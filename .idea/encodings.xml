@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://G:/Download/SpringCloud-Learning-master/SpringCloud-Learning-master/2-Dalston版教程示例/consul-client" charset="UTF-8" />
+    <file url="file://G:/Download/SpringCloud-Learning-master/SpringCloud-Learning-master/2-Dalston版教程示例/consul-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />
+  </component>
+</project>
